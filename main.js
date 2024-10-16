@@ -37,7 +37,7 @@ document.querySelector("#generate").addEventListener("click", () => {
 // New Code created by Martyn
 worker.addEventListener("message", (message) => {
     displayPrimes(message);
-  });
+});
 
 document.querySelector("#reload").addEventListener("click", () => {
   document.querySelector("#user-input").value =

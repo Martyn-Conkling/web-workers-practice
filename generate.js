@@ -30,6 +30,8 @@ addEventListener("message", (message) => {
   
     // When we have finished, send a message to the main thread,
     // including the number of primes we generated.
+    // Sending all the prime number data in chunks prevents memory errors trying to send it all at once
+  
     let counter = 1;
     let chunkHasUnpostedData = false;
     for(let i = 0; i < primes.length; i++){
